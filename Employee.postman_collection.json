@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "e0a16a2a-478d-4af0-9de6-155ddb35b34d",
+		"name": "Employee",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14243642"
+	},
+	"item": [
+		{
+			"name": "Read Operation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/apistudent/api/employee/GetDetails",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"apistudent",
+						"api",
+						"employee",
+						"GetDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Operation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"emp_name\":\"HAri1290\",\"emp_salary\":}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/apistudent/api/employee/SaveDetails",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"apistudent",
+						"api",
+						"employee",
+						"SaveDetails"
+					],
+					"query": [
+						{
+							"key": "Emp_name",
+							"value": "Test1234",
+							"disabled": true
+						},
+						{
+							"key": "emp_salary",
+							"value": "18000",
+							"disabled": true
+						},
+						{
+							"key": "Created_on",
+							"value": "22/11/2022",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Operation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"emp_id\":5,\"emp_name\":\"Hariharan\",\"emp_salary\":30001}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/apistudent/api/employee/UpdateDetails",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"apistudent",
+						"api",
+						"employee",
+						"UpdateDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Operation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"emp_id\":1}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/apistudent/api/employee/RemoveDetails",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"apistudent",
+						"api",
+						"employee",
+						"RemoveDetails"
+					],
+					"query": [
+						{
+							"key": "emp_id",
+							"value": "5",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
